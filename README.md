@@ -11,12 +11,9 @@
      - The Protocol Buffer format is detailed at
       https://github.com/protocolbuffers/protobuf
       
-  - RocksDB
-    - RocksDB is an embeddable persistent key-value store for fast storage
-      https://rocksdb.org/docs/support/faq.html
-      
-   -  Python adapter for RocksDB,
-      https://github.com/twmht/python-rocksdb
-      https://python-rocksdb.readthedocs.io/en/latest/
+  - Amazon DynamoDB
+    - Hosted, scalable database service by Amazon with the data stored in Amazons cloud, 
+      https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Python.html
+     
       
       
