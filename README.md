@@ -35,7 +35,19 @@
   
 - The ZookeeperConnectStrig looks like this, z-1.mskcsv.******.c4.kafka.eu-north-1.amazonaws.com:2181 (Find on MSK)
 - Create a Postgres DB on aws
-- Use this scheme to create the table,
+- Use this scheme to create two tables,
+
+CREATE TABLE msksc.cust_dat (
+
+id int NOT NULL,
+
+timestamp int NOT NULL,
+
+longitutde NOT NULL,
+
+country VARCHAR (50) NOT NULL
+);
+
 
 CREATE TABLE msksc.cust_dat (
 
@@ -50,8 +62,9 @@ country VARCHAR (50) NOT NULL
 
 - Copy the python files to EC2 instance.
 - Run the code producer and consumer codes on two different terminals,
-- python3 consumer.py
-- python3 producer.py
+- python3 Consumer.py
+- python3 Consumer_30.py
+- python3 producer_gtfs.py
 
 - Extra infromation, please edit inbounds on EC2 and RDS to allow traffic.
 - Sometimes need editing routes and network gateways too.
