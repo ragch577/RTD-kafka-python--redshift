@@ -45,20 +45,21 @@ timestamp int NOT NULL,
 
 longitutde NOT NULL,
 
-country VARCHAR (50) NOT NULL
+latitude int NOT NULL
 );
 
 
-CREATE TABLE msksc.cust_dat (
+CREATE TABLE msksc.cust_dat30 (
 
-username VARCHAR(50) NOT NULL,
+id int NOT NULL,
 
-sub_no int NOT NULL,
+timestamp int NOT NULL,
 
-city VARCHAR (50) NOT NULL,
+longitutde NOT NULL,
 
-country VARCHAR (50) NOT NULL
+latitude int NOT NULL
 );
+
 
 - Copy the python files to EC2 instance.
 - Run the code producer and consumer codes on two different terminals,
